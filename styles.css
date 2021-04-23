@@ -1,43 +1,52 @@
 /* You're welcome to change any of this! */
 * {
     box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
 }
 
 body {
+    display: grid;
     margin: 0px;
-    font-family: Arial, sans-serif;
+
+    grid-template-columns: 420px auto;
+    grid-template-areas:
+        "left right";
+
+    height: 100vh;
+    background-color: black;
+    color: white;
 }
 
 header, section {
+    display: flex;
     padding: 20px;
 }
 
-p, li {
-    font-size: 1.1em;
-    line-height: 1.7em;
-    color: #444;
-}
-
-h1 {
-    line-height: 1.5em;
-}
-
-#header {
-    display: flex;
-    align-items: center;
+header {
+    grid-area: left;
     justify-content: center;
     height: 100vh;
     position: fixed;
-    background: blueviolet;
-    padding: 20px;
-    width: 30vw;
-    text-align: center;
+    background: rgb(143, 67, 213);
 }
 
-#inspiration {
-    background-color: darkolivegreen;
-    padding-top: 40px;
-    padding-bottom: 40px;
+main {
+    grid-area: right;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-image: url("https://images.unsplash.com/photo-1615716272018-7c5b1216e262?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    background-size: 100% 100%;
+}
+
+h1, h2 {
+    font-size: 20px;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+p, li {
+    font-size: 16px;
 }
 
 section {
