@@ -3,37 +3,61 @@
 <html lang="en">
    <head>
         <!-- stylesheets and metadata go here -->
-       <title>My CS130 Homepage</title>       
+       <title>My CS130 Homepage</title>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />       
        <link rel="stylesheet" href="style.css">
+       <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+       <style>
+            body {font-family: 'Noto Sans';font-size: 20px;}
+       </style>  
    </head>
+   
    <body>
-       <!-- HTML content tags go here. Change anything you want! -->
-       <header>
-           <h1>My CS130 Homepage</h1>
+       <!-- Header -->
+       <header id="header">
+           <div class="inner">
+            <a href="#" class="image avatar"><img src="https://www.iconsdb.com/icons/preview/yellow/square-xxl.png" alt=""></a>
+            <h1><strong>cs130: intro to the web</strong></h1>
+            <p>Sydney Gil is a student at Northwestern University.</p>
+           </div> 
        </header> 
-       <main>
-            <section id="tutorials">
+
+       <!-- Main -->
+       <div id="main"> 
+           
+            <!-- Tutorials -->
+           <section id="tutorials">
                 <h2>Tutorials</h2>
-                <!-- 
-                    Links to your tutorial assignments go here.
-                    When you submit a new tutorial, add a link to it
-                    here (if applicable)
-                -->
+                <ul>
+                    <li><a href="tutorials/tutorial01/index.html">Tutorial 1</a></li>
+                    <li><a href="tutorials/tutorial03/index.html">Tutorial 3</a></li>
+                  </ul>
             </section>
+            
+            <!-- Homework -->
             <section id="homework">
                 <h2>Homework</h2>
-                <!-- 
-                    Links to your Homework assignments go here.
-                    When you submit a new tutorial, add a link to it
-                    here (if applicable)
-                -->
+                <ul>
+                    <li>Homework 1</li>
+                    <ul>
+                        <li><a href = "hw/hw01/01_cssgrid/index.html">Grid Layout</a></li>
+                        <li><a href = "hw/hw01/02_flexbox/index.html">Photo Gallery</a></li>
+                    </ul>
+                </ul>
             </section>
+
+            <!-- Inspiration -->
             <section id="inspiration">
                 <h2>Design Inspiration</h2>
-                <!-- 
-                    Links to 5-10 websites that inspire you
-                -->
+                <ul>
+                    <li><a href="https://sundae.school/">sundae.school - video background</a></li>
+                    <li><a href="https://peterdo.net/">peterdo - interesting gallery homepage</a></li>
+                    <li><a href="http://www.lejardindezihwa.com/booking/">zihwa tattoo - interactive panels</a></li>
+                    <li><a href="https://www.rina.online/">rina sawayama - photo background & reviews</a></li>
+                    <li><a href="http://gyopo.us/">gyopo - simple, bright, retro looking</a></li>
+                  </ul>
             </section>
-        </main>
+        </div>
    </body>
 </html>

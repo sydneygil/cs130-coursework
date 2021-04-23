@@ -7,15 +7,40 @@ body {
     margin: 0px;
     font-family: Arial, sans-serif;
 }
+
 header, section {
     padding: 20px;
 }
+
 p, li {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    color: #444;
+}
+
+h1 {
     line-height: 1.5em;
 }
 
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    background: blueviolet;
+    padding: 20px;
+    width: 30vw;
+    text-align: center;
+}
+
 #inspiration {
-    background-color: #F0F0F0;
+    background-color: darkolivegreen;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section {
     padding-top: 40px;
     padding-bottom: 40px;
 }
