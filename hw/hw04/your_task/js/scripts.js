@@ -27,40 +27,21 @@ const getTracks = (term) => {
                 tracks.innerHTML = "No tracks found";
             }
             else {
-                if (data.length < 5) {
-                    for (i = 0; i < data.length; i++) {
-                        tracks.innerHTML += 
-                        `<section class="track-item preview" data-preview-track="${data[i].preview_url}">
-                            <img src="${data[i].album.image_url}">
-                            <i class="fas play-track fa-play" aria-hidden="true"></i>
-                            <div class="label">
-                                <h3>${data[i].name}</h3>
-                                <p>
-                                    ${data[i].artist.name}
-                                </p>
+                for (i = 0; i < 5; i++) {
+                    tracks.innerHTML += 
+                    `<section class="track-item preview" data-preview-track="${data[i].preview_url}">
+                        <img src="${data[i].album.image_url}">
+                        <i class="fas play-track fa-play" aria-hidden="true"></i>
+                        <div class="label">
+                            <h3>${data[i].name}</h3>
+                            <p>
+                                ${data[i].artist.name}
+                            </p>
                             </div>
-                        </section>`;
-                    }
-            }
-                else {
-                    for (i = 0; i < 5; i++) {
-                        tracks.innerHTML += 
-                        `<section class="track-item preview" data-preview-track="${data[i].preview_url}">
-                            <img src="${data[i].album.image_url}">
-                            <i class="fas play-track fa-play" aria-hidden="true"></i>
-                            <div class="label">
-                                <h3>${data[i].name}</h3>
-                                <p>
-                                    ${data[i].artist.name}
-                                </p>
-                            </div>
-                        </section>`;
-                    }
+                    </section>`;
                 }
-               
             }
-        });
-
+    });
 };
 
 const getAlbums = (term) => {
