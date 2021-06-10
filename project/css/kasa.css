@@ -1,0 +1,139 @@
+* {
+    font-family: 'Karla';
+    color: #FEF9FF;
+}
+
+ul, li, a {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+
+h2 {
+    width: 50%;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.projects {
+    margin-left: 20%;
+    list-style: none;
+    text-align: left;
+    z-index: 100;
+    position: absolute;
+    font-size: 1.4em;
+    /* color: rgb(61,61,61); */
+    padding: 0;
+}
+  
+.projects li {
+    line-height: 2em;
+    padding-top: 20px;
+    /* text-align: center; */
+}
+
+.projects p {
+    font-size: 15px;
+}
+
+#one:hover {
+    color: red;
+}
+
+#two:hover {
+    color: blue;
+}
+
+#three:hover {
+    color: black;
+}
+
+
+.nav-bar {
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}  
+
+.nav-bar--link {
+    color: #FEF9FF;
+    text-decoration: none;
+}
+
+.nav-bar--link:hover {
+    color: #8EAf9D;
+    text-decoration: none;
+}
+
+.underlined-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 1%;
+}
+
+@media screen and (max-width: 800px) {
+    .image-me {
+        display: none;
+    }
+
+    .image-caption {
+        display: none;
+    }
+
+    .about-left {
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .about-subheader {
+        font-size: 58px;
+    }
+  }
+  
+h1 {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    color: #8EAf9D;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    text-align: center;
+    margin-left: 39%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 2em;
+
+}
+  
+  /* Animation */
+h1 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+}
+  /* text animation */
+  
+@keyframes animated-text{
+    from{max-width: 0;}
+    to{max-width: 100%;}
+}
+  
+  /* cursor animations */
+@keyframes animated-cursor{
+    from{border-right-color: #8EAf9D;}
+    to{border-right-color: transparent;}
+}
+
+body {
+    background-color: #564592;
+    margin-bottom: 100px;
+}

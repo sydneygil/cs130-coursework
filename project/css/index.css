@@ -1,0 +1,143 @@
+* {
+    font-family: 'Karla';
+    color: #FEF9FF;
+}
+
+body {
+    background-color: #564592;
+}
+
+.nav-bar {
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}  
+
+.nav-bar--link {
+    color: #FEF9FF;
+    text-decoration: none;
+}
+
+.nav-bar--link:hover {
+color: #8EAf9D;
+text-decoration: none;
+}
+
+.underlined-group {
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-right: 1%;
+}
+
+.squiggly {
+height: 10px;
+width: 60px;
+margin-left: 7%;
+}
+
+.about-outer-container {
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+}
+
+.about-subheader {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+
+.about-left {
+    max-width: 50%;
+}
+
+.about-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* .infoicon {
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 3%;
+} */
+
+.image-me {
+    width: 400px;
+    /* height: 399px; */
+    margin-top: 20%;
+}
+
+.about-link {
+    text-decoration: none;
+}
+
+.image-caption {
+    text-align: center;
+}
+
+.intext-link {
+    text-decoration: none;
+}
+
+.intext-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .image-me {
+        display: none;
+    }
+
+    .image-caption {
+        display: none;
+    }
+
+    .about-left {
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .about-subheader {
+        font-size: 58px;
+    }
+  }
+  
+  h1 {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    color: #8EAf9D;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 2em;
+}
+  
+  /* Animation */
+h1 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+}
+  /* text animation */
+  
+@keyframes animated-text{
+    from{max-width: 0;}
+    to{max-width: 100%;}
+}
+  
+  /* cursor animations */
+@keyframes animated-cursor{
+    from{border-right-color: #8EAf9D;}
+    to{border-right-color: transparent;}
+}
